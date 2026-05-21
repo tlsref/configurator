@@ -145,6 +145,7 @@ and [started out supporting Apache HTTP, Nginx and HAProxy](https://web.archive.
 * [April King](https://github.com/april)
 * [Gene Wood](https://github.com/gene1wood)
 * [Julien Vehent](https://github.com/jvehent)
+* [Glenn Strauss](https://github.com/gstrauss)
 
 ## License
 
