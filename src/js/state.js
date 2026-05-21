@@ -14,7 +14,7 @@ export default async function () {
     if (isNaN(guideln) || isNaN(parseFloat(guideln))) {
       return guideln_latest; // invalid numerical version string
     }
-    const url = "https://ssl-config.mozilla.org/guidelines/"+guideln+".json";
+    const url = "https://data.tlsref.org/guidelines/"+guideln+".json";
     try {
       const response = await fetch(url);
       if (!response.ok) {
@@ -95,7 +95,7 @@ export default async function () {
 
   // generate the header
   const date = new Date().toISOString().substr(0, 10);
-  let header = `generated ${date}, Mozilla Guideline v${guideln}, ${version_tags}`;
+  let header = `generated ${date}, TLSRef Guideline v${guideln}, ${version_tags}`;
   header += configs[server].supportsHsts !== false && form['hsts'].checked ? ', HSTS' : '';
   header += supportsOcspStapling && form['ocsp'].checked ? ', OCSP' : '';
 

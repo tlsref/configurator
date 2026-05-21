@@ -32,11 +32,11 @@ export default (form, output) => {
 
     var conf =
 `# Please note that Application Load Balancers don't allow you to directly specify protocols
-# and ciphers, so this is the closest existing mapping from the Mozilla ${form.config}
+# and ciphers, so this is the closest existing mapping from the TLSRef ${form.config}
 # profile onto an existing Amazon SSL Security Policy. For additional information, please see:
 # https://docs.aws.amazon.com/elasticloadbalancing/latest/application/create-https-listener.html#describe-ssl-policies
 AWSTemplateFormatVersion: 2010-09-09
-Description: Mozilla ALB configuration generated ${output.date}, ${output.link}
+Description: TLSRef ALB configuration generated ${output.date}, ${output.link}
 Parameters:
   SSLCertificateId:
     Description: The ARN of the ACM SSL certificate to use

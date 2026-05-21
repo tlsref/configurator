@@ -28,7 +28,7 @@ const plugins = [
     production,
     revision: revision(),
 
-    title: 'Mozilla SSL Configuration Generator',
+    title: 'TLS Configurator',
     template: 'src/templates/index.ejs',
     favicon: 'src/images/favicon.png'
   }),
@@ -66,7 +66,7 @@ if (process.env.NODE_ENV === 'analyze') {
 module.exports = {
   output: {
     crossOriginLoading: 'anonymous',
-    library: 'SSLConfigGenerator',
+    library: 'TLSConfigurator',
     libraryTarget: 'var',
     path: production ? path.resolve(__dirname, '..', 'docs') : path.resolve(__dirname, '..', 'build'),
     filename: '[contenthash].[name]'

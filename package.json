@@ -1,7 +1,7 @@
 {
-  "name": "mozilla-ssl-config-generator",
+  "name": "tls-configurator",
   "version": "5.7.1",
-  "description": "Mozilla SSL Configuration Generator",
+  "description": "TLS configurator",
   "license": "MPL-2.0",
   "scripts": {
     "analyze": "NODE_ENV=analyze webpack --config=config/webpack.config.js --progress",
@@ -11,12 +11,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mozilla/ssl-config-generator.git"
+    "url": "https://github.com/tlsref/configurator.git"
   },
   "bugs": {
-    "url": "https://github.com/mozilla/ssl-config-generator/issues"
+    "url": "https://github.com/tlsref/configurator/issues"
   },
-  "homepage": "https://ssl-config.mozilla.org",
+  "homepage": "https://configurator.tlsref.org/",
   "dependencies": {
     "bootstrap.native": "^5.1.1",
     "clipboard": "^2.0.11",
