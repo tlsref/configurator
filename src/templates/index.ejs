@@ -53,7 +53,7 @@
 
         <!-- config -->
         <div class="col-12 col-md-4" id="form-config">
-          <h5 class="mt-3 mt-md-0">Mozilla Configuration</h5>
+          <h5 class="mt-3 mt-md-0">TLSRef Configuration</h5>
           <input type="hidden" name="guideline" id="guideline" value="">
           <div class="form-check">
             <input class="form-check-input" type="radio" name="config" id="config-modern" value="modern">
@@ -150,7 +150,7 @@
         <div class="col-12 col-md-4">
           <h5>Resources</h5>
           <ul class="list-unstyled">
-            <li><a class="text-white" href="https://wiki.mozilla.org/Security/Server_Side_TLS">Mozilla Server Side TLS configurations</a></li>
+            <li><a class="text-white" href="https://docs.tlsref.org/Security/Server_Side_TLS">TLSRef Server Side TLS configurations</a></li>
             <li><a class="text-white" href="https://infosec.mozilla.org/guidelines/web_security">Mozilla's own Web Security guidelines</a></li>
             <li><a class="text-white" href="https://developer.mozilla.org/docs/Web/Security/Transport_Layer_Security">Transport Layer Security on MDN</a></li>
             <li><a class="text-white" href="https://observatory.mozilla.org/">Mozilla HTTP Observatory</a></li>
@@ -160,16 +160,16 @@
         <div class="col-12 col-md-4">
           <h5>Contribute & report issues</h5>
           <ul class="list-unstyled">
-            <li><a class="text-white" href="https://github.com/mozilla/ssl-config-generator/issues">File a bug</a></li>
-            <li><a class="text-white" href="https://github.com/mozilla/ssl-config-generator#creating-templates">Supporting new software</a></li>
-            <li><a class="text-white" href="https://github.com/mozilla/ssl-config-generator/releases">Changelog and version history</a></li>
+            <li><a class="text-white" href="https://github.com/tlsref/configurator/issues">File a bug</a></li>
+            <li><a class="text-white" href="https://github.com/tlsref/configurator#creating-templates">Supporting new software</a></li>
+            <li><a class="text-white" href="https://github.com/tlsref/configurator/releases">Changelog and version history</a></li>
           </ul>
         </div>
       </div>
 
     </div>
     <% if (htmlWebpackPlugin.options.production) { %>
-    <div class="w-100 d-none d-md-block pr-3 pb-1 small text-right text-muted"><a class="text-secondary" href="https://github.com/mozilla/ssl-config-generator/commit/<%= htmlWebpackPlugin.options.revision %>">build <%= htmlWebpackPlugin.options.revision %></a>, generated <%= htmlWebpackPlugin.options.date %></div>
+    <div class="w-100 d-none d-md-block pr-3 pb-1 small text-right text-muted"><a class="text-secondary" href="https://github.com/tlsref/configurator/commit/<%= htmlWebpackPlugin.options.revision %>">build <%= htmlWebpackPlugin.options.revision %></a>, generated <%= htmlWebpackPlugin.options.date %></div>
     <% } %>
   </footer>
 </body>

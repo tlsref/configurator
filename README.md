@@ -1,40 +1,36 @@
-# Mozilla SSL Configuration Generator
+# TLS Configurator
 
-The Mozilla SSL Configuration Generator is a tool which builds configuration files to help you follow the Mozilla [Server Side TLS](https://wiki.mozilla.org/Security/Server_Side_TLS) configuration guidelines.
+The TLS Configurator is a tool which builds configuration files to help you follow the TLSRef [Server Side TLS](https://docs.tlsref.org/Security/Server_Side_TLS) configuration guidelines.
 
-This tool is built and deployed to https://ssl-config.mozilla.org/
+This tool is built and deployed to https://configurator.tlsref.org/
 
-To be notified when the Mozilla [Server Side TLS](https://wiki.mozilla.org/Security/Server_Side_TLS) configuration guidelines are updated (infrequent), use github notifications to subscribe to Releases on this repository (mozilla/ssl-config-generator).
+To be notified when the TLSRef [Server Side TLS](https://docs.tlsref.org/Security/Server_Side_TLS) configuration guidelines are updated (infrequent), use github notifications to subscribe to Releases on this repository (tlsref/configurator).
 
 To modify and build this tool locally, please see Installation and Development sections below.
 
 ## JSON guidelines
 
-Each revision of the Mozilla Server Side TLS guidelines is published in a machine-readable format from this repository as a [JSON specification](/src/static/guidelines/) that can be found at [`/src/static/guidelines/`](/src/static/guidelines/) 📟
-
-## Changelog
-
-The [Changelog](/src/static/guidelines/CHANGELOG.md) that tracks the history of changes to Mozilla's configuration guidelines is available along the versioned JSON guideline files at [`/src/static/guidelines/CHANGELOG.md`](/src/static/guidelines/CHANGELOG.md) 🔬
+Each revision of the TLSRef Server Side TLS guidelines is published in a machine-readable format as a [JSON specification](https://data.tlsref.org/src/static/guidelines/) 📟
 
 ## Contributing
 
 The project is written in JavaScript, and uses Webpack for development and production builds.
 
-We keep a list of things that would make a great contribution tagged with [*help wanted*](https://github.com/mozilla/ssl-config-generator/labels/help%20wanted), [*good first issue*](https://github.com/mozilla/ssl-config-generator/labels/good%20first%20issue), and [*new software support*](https://github.com/mozilla/ssl-config-generator/labels/new%20software%20support) labels.
+We keep a list of things that would make a great contribution tagged with [*help wanted*](https://github.com/tlsref/configurator/labels/help%20wanted), [*good first issue*](https://github.com/tlsref/configurator/labels/good%20first%20issue), and [*new software support*](https://github.com/tlsref/configurator/labels/new%20software%20support) labels.
 
 If you'd like to see your favorite tool added or compatibility expanded, we're always happy to mentor a PR or receive a bug report to make the configs better for everyone.
 
 Even when you don't feel comfortable contributing actual templates, posting some nice verified configs or compatibility hints is equally welcome! 💝
 
-Get involved by sharing your ideas or joining the conversation in the [Discussions](https://github.com/mozilla/ssl-config-generator/discussions) tab. 🗨️
+Get involved by sharing your ideas or joining the conversation in the [Discussions](https://github.com/tlsref/configurator/discussions) tab. 🗨️
 
 This repository is governed by Mozilla's [Community Participation Guidelines](/CODE_OF_CONDUCT.md)
-so please make yourself familiar with it to get the idea of what level of developer etiquette and standards are expected across Mozilla projects.
+so please make yourself familiar with it to get the idea of what level of developer etiquette and standards are expected.
 
 ## Installation
 
 NodeJS and npm are required to install and run the project locally:
-Node v22 is recommended and we use that in production, but the codebase may be compatible with other versions too.
+Node v24 is recommended and we use that in production, but the codebase may be compatible with other versions too.
 
 ```bash
 $ npm install
@@ -111,7 +107,7 @@ Highlighted items from src/js/state.js for use in templates.  See src/js/state.j
 
 Over time support for various software has been requested and discussed. This is a list of those requests. Check out the linked tickets to see the background and then feel free to submit a pull request for the tool to support that piece of software
 
-* [Micorsoft Internet Information Services (IIS)](https://github.com/mozilla/ssl-config-generator/issues/54)
+* [Microsoft Internet Information Services (IIS)](https://github.com/mozilla/ssl-config-generator/issues/54)
 * [Envoy Proxy](https://github.com/mozilla/ssl-config-generator/issues/29)
 * [Wildfly](https://github.com/mozilla/ssl-config-generator/issues/172)
 * [Kestrel/ASP.NET Core](https://github.com/mozilla/ssl-config-generator/issues/147)
@@ -121,7 +117,7 @@ Over time support for various software has been requested and discussed. This is
 * [H2O](https://github.com/mozilla/ssl-config-generator/issues/329)
 * [Kubelet](https://github.com/mozilla/ssl-config-generator/pull/197)
 
-Active issues related to new software can be found in the issue list using the [`new software support` label](https://github.com/mozilla/ssl-config-generator/issues?q=is%3Aissue%20state%3Aopen%20label%3A%22new%20software%20support%22).
+Active issues related to new software can be found in the issue list using the [`new software support` label](https://github.com/tlsref/configurator/issues?q=is%3Aissue%20state%3Aopen%20label%3A%22new%20software%20support%22).
 
 ## Building
 

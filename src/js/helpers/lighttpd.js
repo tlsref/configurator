@@ -2,12 +2,12 @@ import minver from './minver.js';
 
 // lighttpd TLS defaults are incrementally updated over time to improve security
 // and the lighttpd TLS defaults are widely supported by clients.  The output of
-// ssl-config-generator might explicitly lock configurations to specific details
+// TLS configurator might explicitly lock configurations to specific details
 // and might result in those configs continuing to be used for many, many years
 // without a security review.  Therefore, lighttpd TLS defaults should be
-// preferred when those defaults exceed the Mozilla ssl-config-generator
-// specification.  The logic below attempts to omit extra lines of configuration
-// when those extra lines match or are exceeded by the lighttpd TLS defaults.
+// preferred when those defaults exceed the TLS configurator specification.
+// The logic below attempts to omit extra lines of configuration when those
+// extra lines match or are exceeded by the lighttpd TLS defaults.
 
 export default (form, output) => {
  var conf =

@@ -28,7 +28,7 @@ const plugins = [
     production,
     revision: revision(),
 
-    title: 'Mozilla SSL Configuration Generator',
+    title: 'TLS Configurator',
     template: 'src/templates/index.ejs',
     favicon: 'src/images/favicon.png'
   }),

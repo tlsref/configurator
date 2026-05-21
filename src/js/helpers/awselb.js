@@ -23,7 +23,7 @@ export default (form, output) => {
 
     var conf =
 `AWSTemplateFormatVersion: 2010-09-09
-Description: Mozilla ELB configuration generated ${output.date}, ${output.link}
+Description: TLSRef ELB configuration generated ${output.date}, ${output.link}
 Parameters:
   SSLCertificateId:
     Description: The ARN of the ACM SSL certificate to use
@@ -40,13 +40,13 @@ Resources:
         - LoadBalancerPort: '443'
           InstancePort: '80'
           PolicyNames:
-            - Mozilla-${form.config}-v5-0
+            - TLSRef-${form.config}-v5-0
           SSLCertificateId: !Ref SSLCertificateId
           Protocol: HTTPS
       AvailabilityZones:
         Fn::GetAZs: !Ref 'AWS::Region'
       Policies:
-        - PolicyName: Mozilla-${form.config}-v5-0
+        - PolicyName: TLSRef-${form.config}-v5-0
           PolicyType: SSLNegotiationPolicyType
           Attributes:
 ${attributes}
