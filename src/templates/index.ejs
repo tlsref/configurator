@@ -6,8 +6,10 @@
       https://bugzilla.mozilla.org/show_bug.cgi?id=1122305#c8
     -->
     <% if (htmlWebpackPlugin.options.production) { %>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZRW9P16BD8"></script>
-    <script src="/analytics.js"></script>
+    <script defer src="/analytics.js"
+            data-website-id="dd654bc2-683c-49fe-8646-31e256d78105"
+            data-do-not-track="true"
+    ></script>
     <% } %>
 
     <meta charset="utf-8">
