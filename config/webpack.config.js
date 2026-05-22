@@ -30,7 +30,7 @@ const plugins = [
 
     title: 'TLS Configurator',
     template: 'src/templates/index.ejs',
-    favicon: 'src/images/favicon.png'
+    favicon: 'src/images/icon.svg'
   }),
   new CopyWebpackPlugin({
     patterns: [
