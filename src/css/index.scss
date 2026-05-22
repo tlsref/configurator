@@ -1,7 +1,29 @@
 @use '_bootstrap.scss';
 @use 'bs-4.6.2.css';
 
-@import url(https://code.cdn.mozilla.net/fonts/zilla-slab.css);
+@import url(https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600;700&display=swap);
+
+body {
+  background-color: #f8fafc;
+}
+
+.brand-icon {
+  display: inline-block;
+  height: .85em;
+  margin-right: .25em;
+  vertical-align: -.1em;
+  width: .85em;
+}
+
+.brand-badge {
+  background-color: #0f766e;
+  border-radius: 999px;
+  color: white;
+  font-weight: 600;
+  letter-spacing: .03em;
+  margin-right: .5rem;
+  padding: .35em 1.1em;
+}
 
 #copy {
   bottom: 4rem;

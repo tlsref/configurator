@@ -1,6 +1,6 @@
 // colors
 .bg-black {
-  background-color: black;
+  background-color: #0f172a;
 }
 
 .text-black {
@@ -9,12 +9,12 @@
 
 // typography
 $font-size-base:         1rem !default;  // 16px
-$font-family-sans-serif: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
-$font-family-serif:      "Zilla Slab", Georgia, "Times New Roman", Times, serif !default;
+$font-family-sans-serif: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-serif:      "IBM Plex Sans", Georgia, "Times New Roman", Times, serif !default;
 
 $font-family-base:     $font-family-sans-serif !default;
-$headings-font-family: $font-family-serif !default;
-$headings-font-weight: 700 !default;
+$headings-font-family: $font-family-sans-serif !default;
+$headings-font-weight: 600 !default;
 
 // these are the protocol font sizes
 $h1-font-size: $font-size-base * 4.5;
