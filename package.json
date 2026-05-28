@@ -1,7 +1,7 @@
 {
-  "name": "tls-configurator",
+  "name": "tlsref-configurator",
   "version": "5.7.1",
-  "description": "TLS configurator",
+  "description": "TLSRef configurator",
   "license": "MPL-2.0",
   "scripts": {
     "analyze": "NODE_ENV=analyze webpack --config=config/webpack.config.js --progress",
