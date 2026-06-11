@@ -5,7 +5,6 @@ import { xmlEntities } from './utils.js';
 // note: guideln_latest for '6.0' is rendered as number 6 in guidelines[], not string '6.0'
 const guideln_latest = '6.0'; // update when guideline changes
 const guidelines = {};
-guidelines[guideln_latest] = require(`https://data.tlsref.org/static/guidelines/${guideln_latest}.json`);
 
 export default async function () {
 
