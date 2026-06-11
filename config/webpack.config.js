@@ -35,7 +35,6 @@ const plugins = [
   new CopyWebpackPlugin({
     patterns: [
         {from: 'config/CNAME'},
-        {from: 'src/static'},
         {from: 'src/js/analytics.js'}
     ]
   }),
