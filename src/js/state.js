@@ -144,7 +144,7 @@ export default async function () {
       ciphers,
       cipherSuites: ssc.ciphersuites,
       date,
-      dhCommand: `curl ${url.origin}/ffdhe${ssc.dh_param_size}.txt`,
+      dhCommand: `curl https://data.tlsref.org/static/ffdhe${ssc.dh_param_size}.txt`,
       dhParamSize: ssc.dh_param_size,
       fragment,
       hasVersions: configs[server].hasVersions !== false,
