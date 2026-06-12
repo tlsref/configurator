@@ -1,10 +1,10 @@
 # TLS Configurator
 
-The TLS Configurator is a tool which builds configuration files to help you follow the TLSRef [Server Side TLS](https://docs.tlsref.org/Security/Server_Side_TLS) configuration guidelines.
+The TLS Configurator is a tool which builds configuration files to help you follow the TLSRef [Server Side TLS](https://docs.tlsref.org/server-side-tls.html) configuration guidelines.
 
 This tool is built and deployed to https://configurator.tlsref.org/
 
-To be notified when the TLSRef [Server Side TLS](https://docs.tlsref.org/Security/Server_Side_TLS) configuration guidelines are updated (infrequent), use github notifications to subscribe to Releases on this repository (tlsref/configurator).
+To be notified when the TLSRef [Server Side TLS](https://docs.tlsref.org/server-side-tls.html) configuration guidelines are updated (infrequent), use github notifications to subscribe to Releases on this repository (tlsref/configurator).
 
 To modify and build this tool locally, please see Installation and Development sections below.
 
