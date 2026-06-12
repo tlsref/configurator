@@ -97,6 +97,8 @@ export default async function () {
   let header = `generated ${date}, TLSRef Guideline v${guideln}, ${version_tags}`;
   header += configs[server].supportsHsts !== false && form['hsts'].checked ? ', HSTS' : '';
   header += supportsOcspStapling && form['ocsp'].checked ? ', OCSP' : '';
+  const gitrev = document.getElementById('gitrev').value;
+  header += gitrev ? `, gitrev=${gitrev}` : '';
 
   const link = `${url.origin}${url.pathname}#${fragment}`;
 

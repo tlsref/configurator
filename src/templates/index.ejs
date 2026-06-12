@@ -171,6 +171,7 @@
     <% if (htmlWebpackPlugin.options.production) { %>
     <div class="w-100 d-none d-md-block pr-3 pb-1 small text-right text-muted"><a class="text-secondary" href="https://github.com/tlsref/configurator/commit/<%= htmlWebpackPlugin.options.revision %>">build <%= htmlWebpackPlugin.options.revision %></a>, generated <%= htmlWebpackPlugin.options.date %></div>
     <% } %>
+    <input type="hidden" id="gitrev" name="gitrev" value="<%= htmlWebpackPlugin.options.revision %>">
   </footer>
 </body>
 </html>
