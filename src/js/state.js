@@ -13,7 +13,7 @@ export default async function () {
     if (isNaN(guideln) || isNaN(parseFloat(guideln))) {
       return guideln_latest; // invalid numerical version string
     }
-    const url = "https://data.tlsref.org/static/guidelines/"+guideln+".json";
+    const url = "https://data.tlsref.org/guidelines/"+guideln+".json";
     try {
       const response = await fetch(url);
       if (!response.ok) {
@@ -144,7 +144,7 @@ export default async function () {
       ciphers,
       cipherSuites: ssc.ciphersuites,
       date,
-      dhCommand: `curl https://data.tlsref.org/static/ffdhe${ssc.dh_param_size}.txt`,
+      dhCommand: `curl https://data.tlsref.org/ffdhe/ffdhe${ssc.dh_param_size}.txt`,
       dhParamSize: ssc.dh_param_size,
       fragment,
       hasVersions: configs[server].hasVersions !== false,

@@ -10,7 +10,7 @@ To modify and build this tool locally, please see Installation and Development s
 
 ## JSON guidelines
 
-Each revision of the TLSRef Server Side TLS guidelines is published in a machine-readable format as a [JSON specification](https://data.tlsref.org/src/static/guidelines/) 📟
+Each revision of the TLSRef Server Side TLS guidelines is published in a machine-readable format as a [JSON specification](https://data.tlsref.org/) 📟
 
 ## Contributing
 
