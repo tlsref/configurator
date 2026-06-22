@@ -142,6 +142,10 @@ function form_config_init() {
           document.getElementById('ocsp').checked = true;
         }
       }
+      else {
+        document.getElementById('hsts').checked = params.has('hsts');
+        document.getElementById('ocsp').checked = params.has('ocsp');
+      }
       document.getElementById('config-old-compat').classList.toggle('d-none', (!isNaN(guideln) && guideln >= 6.0));
     }
 
@@ -156,8 +160,10 @@ function form_config_init() {
 
         switch (e.type) {
           case 'radio':
-          case 'checkbox':
             e.checked = entry[1] === undefined ? true : mappings[entry[1]] === undefined ? !!entry[1] : mappings[entry[1]];
+            break;
+          case 'checkbox':
+            e.checked = true;
             break;
           case 'text':
           case 'hidden':
