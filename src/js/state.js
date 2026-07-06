@@ -33,7 +33,7 @@ export async function get_state({server, config, serverVersion, opensslVersion, 
   if (!opensslVersion) {
     opensslVersion = configs.openssl.latestVersion;
   }
-  if (guideln === '') {
+  if (!guideln) {
     guideln = guideln_latest;
   }
 
