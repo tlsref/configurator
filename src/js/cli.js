@@ -2,7 +2,7 @@ import { parseArgs } from 'util';
 import configs from './configs.js';
 import minver from './helpers/minver.js';
 import { xmlEntities } from './utils.js';
-import { get_state } from './state.js';
+import { get_state, guideln_latest } from './state.js';
 
 const servers = Object.keys(configs).filter(k => k !== 'openssl');
 

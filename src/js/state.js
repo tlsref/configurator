@@ -3,7 +3,7 @@ import minver from './helpers/minver.js';
 import { xmlEntities } from './utils.js';
 
 // note: guideln_latest for '6.0' is rendered as number 6 in guidelines[], not string '6.0'
-const guideln_latest = '6.0'; // update when guideline changes
+export const guideln_latest = '6.0'; // update when guideline changes
 const guidelines = {};
 
 async function fetch_guideline(guideln) {
