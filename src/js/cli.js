@@ -1,8 +1,8 @@
 import { parseArgs } from 'util';
-import configs from '../src/js/configs.js';
-import minver from '../src/js/helpers/minver.js';
-import { xmlEntities } from '../src/js/utils.js';
-import { get_state } from '../src/js/state.js';
+import configs from './configs.js';
+import minver from './helpers/minver.js';
+import { xmlEntities } from './utils.js';
+import { get_state } from './state.js';
 
 const servers = Object.keys(configs).filter(k => k !== 'openssl');
 
@@ -76,7 +76,7 @@ async function main() {
     return 1;
   }
 
-  const template = require('../src/js/helpers/' + values.server + '.js').default;
+  const template = require('./helpers/' + values.server + '.js').default;
   process.stdout.write(template(form, output));
 
   return 0;

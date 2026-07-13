@@ -1,6 +1,9 @@
 #!/usr/bin/env node
 'use strict';
 
+// Used to run tlsref directly, without needing to build it with webpack
+// first.
+
 const babel = require('@babel/core');
 const Module = require('module');
 const fs = require('fs');
@@ -20,4 +23,4 @@ Module._extensions['.js'] = function (mod, filename) {
   mod._compile(result.code, filename);
 };
 
-require('./cli.js');
+require('../src/js/cli.js');
