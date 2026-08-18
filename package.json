@@ -6,6 +6,7 @@
   "scripts": {
     "analyze": "NODE_ENV=analyze webpack --config=config/webpack.config.js --progress",
     "build": "NODE_ENV=production webpack --config=config/webpack.config.js --progress",
+    "build-cli": "NODE_ENV=production webpack --config=config/cli.webpack.config.js --progress",
     "watch": "NODE_ENV=development webpack --config=config/webpack.config.js --watch --progress",
     "start": "npm run watch"
   },
