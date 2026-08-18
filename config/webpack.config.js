@@ -50,7 +50,7 @@ if (process.env.NODE_ENV === 'analyze') {
     new BundleAnalyzerPlugin({})
   );
 } else if (process.env.NODE_ENV === 'development') {
-  const BrowserSyncWebpackPlugin = require('browser-sync-v3-webpack-plugin');
+  const BrowserSyncWebpackPlugin = require('browser-sync-webpack-plugin');
   plugins.push(
     new BrowserSyncWebpackPlugin({
       host: 'localhost',
